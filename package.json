@@ -1,0 +1,40 @@
+{
+    "name": "vuelab",
+    "version": "0.0.1",
+    "description": "VueJS sandbox lab",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack",
+	"rundev": "webpack --devtool source-map -w"
+    },
+    "homepage": "https://github.com/koi8-r/vuelab#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/koi8-r/vuelab.git"
+    },
+    "author": "koi8-r <me@oz.net.ru> (http://oz.net.ru/)",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/koi8-r/vuelab/issues"
+    },
+    "dependencies": {
+        "axios": "*",
+        "axios-mock-adapter": "*",
+        "vue": "~2",
+        "lodash": "*"
+    },
+    "devDependencies": {
+        "babel-core": "*",
+        "babel-loader": "*",
+        "babel-plugin-syntax-dynamic-import": "^6.18.0",
+        "babel-preset-env": "*",
+        "clean-webpack-plugin": "*",
+        "copy-webpack-plugin": "*",
+        "css-loader": "*",
+        "file-loader": "*",
+        "raw-loader": "*",
+        "style-loader": "*",
+        "webpack": "~4",
+        "webpack-cli": "*"
+    }
+}
