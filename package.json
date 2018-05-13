@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "build": "webpack",
-	"rundev": "webpack --devtool source-map -w"
+        "rundev": "webpack --devtool source-map -w"
     },
     "homepage": "https://github.com/koi8-r/vuelab#readme",
     "repository": {

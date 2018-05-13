@@ -1,0 +1,6 @@
+- [How to serialize SqlAlchemy result to JSON?](https://stackoverflow.com/questions/5022066/how-to-serialize-sqlalchemy-result-to-json)
+- [Cornice: A REST framework for Pyramid](https://cornice.readthedocs.io/en/latest/)
+- [Marshmallow ecosystem](https://github.com/marshmallow-code/marshmallow/wiki/Ecosystem)
+- No need for regular object, just namedtule or ns
+- Deser and validate from UA request and from DAL
+- Needs of Metaclass ?
