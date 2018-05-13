@@ -4,3 +4,5 @@
 - No need for regular object, just namedtule or ns
 - Deser and validate from UA request and from DAL
 - Needs of Metaclass ?
+- [Colander Basics](https://docs.pylonsproject.org/projects/colander/en/latest/basics.html#deserialization)
+- [7 Best Python Libraries for Validating Data](https://www.yeahhub.com/7-best-python-libraries-validating-data/)
