@@ -67,4 +67,14 @@ async def index(req: Request):
     return Response(status=200, text='index', content_type='text/plain')
 
 
+@httpd.route(verb='POST', path='/')
+async def io(req: Request):
+    bytes_body = await req.read()
+    encoding = req.charset or 'utf-8'
+    ct = req.content_type
+    print((bytes_body, encoding, ct,))
+    # return Response(status=200, text=type(req.text()).__name__)
+    return Response(status=200, text='x')
+
+
 httpd.run()
