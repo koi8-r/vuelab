@@ -8,6 +8,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin') ;
 
 module.exports = {
     mode: 'development',
+    devtool: 'source-map',
     entry: {
         'app': './app/app',
         'test': './app/test'

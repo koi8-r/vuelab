@@ -1,11 +1,6 @@
 import types
 
 
-# No need for regular object, just namedtule or ns
-# Deser and validate from UA request and from DAL
-# Need for Metaclass ?
-
-
 class String(str):
     @property
     def raw_type(self):

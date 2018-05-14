@@ -1,7 +1,10 @@
+wheel
 aiohttp
 aiopg
 psycopg2-binary
-# marshmallow>=3.*
-git+https://github.com/marshmallow-code/marshmallow.git@dev
+marshmallow>=3.*
+# git+https://github.com/marshmallow-code/marshmallow.git@dev
 sqlalchemy
 webargs
+schema
+schematics
