@@ -11,6 +11,14 @@ def run(this):
     web.run_app(this)
 
 
+def consume():
+    def decorator(fn):
+        def wrap(req: Request):
+            return fn(req)
+        return wrap
+    return decorator
+
+
 def route(this, verb='GET', path='/'):
     def decorator(fn):
         this.router.add_route(verb, path, fn)
@@ -67,14 +75,18 @@ async def index(req: Request):
     return Response(status=200, text='index', content_type='text/plain')
 
 
+@consume()
 @httpd.route(verb='POST', path='/')
+@consume()
 async def io(req: Request):
     bytes_body = await req.read()
     encoding = req.charset or 'utf-8'
     ct = req.content_type
     print((bytes_body, encoding, ct,))
+
+
     # return Response(status=200, text=type(req.text()).__name__)
-    return Response(status=200, text='x')
+    return Response(status=200, text='OK')
 
 
 httpd.run()
