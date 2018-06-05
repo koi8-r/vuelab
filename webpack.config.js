@@ -11,7 +11,8 @@ module.exports = {
     devtool: 'source-map',
     entry: {
         'app': './app/app',
-        'test': './app/test'
+        'test': './app/test',
+        'vf': './vf/app'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -26,6 +27,8 @@ module.exports = {
     plugins: [
         new CopyWebpackPlugin([
             { from: './*.html', to: './[name].[ext]' },
+            { from: './vf/index.html', to: './vf-index.html' },
+            { from: 'vuetify/dist/vuetify.css' },
         ]),
     ],
     module: {

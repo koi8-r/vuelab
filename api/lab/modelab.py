@@ -14,6 +14,7 @@ def run(this):
 def consume():
     def decorator(fn):
         def wrap(req: Request):
+            print(req.content_type)
             return fn(req)
         return wrap
     return decorator

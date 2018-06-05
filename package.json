@@ -20,8 +20,9 @@
     "dependencies": {
         "axios": "*",
         "axios-mock-adapter": "*",
+        "lodash": "*",
         "vue": "~2",
-        "lodash": "*"
+        "vuetify": "^1.0.18"
     },
     "devDependencies": {
         "babel-core": "*",
